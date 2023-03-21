@@ -1,0 +1,18 @@
+{% extends 'layouts/indexBase.html' %} {% block title %} Editar periodo {% endblock %} {% block content %}
+<div class="container">
+    <center>
+        <h2><b>Editar empresa</b></h2>
+    </center>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="date">Supermercado</label>
+            <input value="{{period[1]}}" class="form-control" type="text" placeholder="Nombre" id="date" name="date" required>
+        </div>
+        <div class="mb-3">
+            <label for="period">NIT</label>
+            <input value="{{period[2]}}" class="form-control" type="number" placeholder="Cod. " id="period" name="period" required>
+        </div>
+        <button class="btn btn-success" type="submit"><i class="bi bi-save-fill"></i></button>
+    </form>
+</div>
+{% endblock %}

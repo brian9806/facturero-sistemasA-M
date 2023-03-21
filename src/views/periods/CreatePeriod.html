@@ -1,0 +1,18 @@
+{% extends 'layouts/base.html' %} {% block title %} Crear empresa {% endblock %} {% block content %}
+<div class="container">
+    <center>
+        <h2><b>Crear empresa</b></h2>
+    </center>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="date">Empresa</label>
+            <input class="form-control" type="text" placeholder="Nombre" id="date" name="date" required>
+        </div>
+        <div class="mb-3">
+            <label for="period">NIT</label>
+            <input class="form-control" type="number" placeholder="Cod." id="period" name="period" required>
+        </div>
+        <button type="submit" class="btn btn-success"><i class="bi bi-save-fill"></i></button>
+    </form>
+</div>
+{% endblock %}

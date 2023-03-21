@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="general.css" />
+    <title>Soporte</title>
+</head>
+
+<body>
+
+    <form name="F1">
+        <select size="1" onclick="multipl()">
+        <option value="seleciona">seleciona</option>
+        </select>
+        <input type="text" name="T1" size="20" value=""> X
+        <input type="text" name="T2" size="20" value=""> =
+        <input type="text" name="T3" size="20" value=""> Total
+    </form>
+    <script>
+        function multipl() {
+            document.F1.T3.value = (document.F1.T1.value) * (document.F1.T2.value)
+        }
+    </script>
+
+</body>
+
+</html>
